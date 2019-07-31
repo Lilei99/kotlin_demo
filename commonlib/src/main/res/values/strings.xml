@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">commonlib</string>
+    <string name="exit_app">再按一次退出app</string>
+    <string name="rationale_ask">没有请求的权限, 此应用程序可能无法正常工作.</string>
+    <string name="rationale_ask_again">
+        没有请求的权限, 此应用程序可能无法正常工作.
+                 打开应用程序设置屏幕以修改应用程序权限.
+    </string>
+
+    <string name="headimg">
+        请选择不大于5M的证件免冠照
+        ,支持jpg、jpeg、png格式。注意:
+        此照片亦用于生成证书。
+    </string>
+
+    <string name="title_settings_dialog">请求权限</string>
+    <string name="text_agree">同意</string>
+    <string name="text_cancel">取消</string>
+    <string name="no_data">没有数据</string>
+
+    <string name="empty_view_hint">暂无数据</string>
+    <string name="error_view_hint">加载失败</string>
+    <string name="no_network_view_hint">网络异常</string>
+</resources>

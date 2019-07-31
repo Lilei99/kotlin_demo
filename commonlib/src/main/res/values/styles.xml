@@ -1,0 +1,59 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorTransparent</item>
+        <item name="colorPrimaryDark">@color/colorTransparent</item>
+        <item name="colorAccent">@color/black_33</item>
+        <item name="android:background">@color/colorTransparent</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="Dialog.Alert.Self"
+           parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/color_00B3F1</item>
+    </style>
+
+    <style name="CustomDialog_Translucent" parent="CustomDialog">
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+    </style>
+
+    <style name="anim_bottom_bottom" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_sliding_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_sliding_to_bottom</item>
+    </style>
+
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/colorTransparent</item>
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+    </style>
+
+    <style name="AVLoadingIndicatorView">
+        <item name="minWidth">@dimen/xdp_52</item>
+        <item name="maxWidth">@dimen/xdp_52</item>
+        <item name="minHeight">@dimen/xdp_52</item>
+        <item name="maxHeight">@dimen/xdp_52</item>
+        <item name="indicatorName">BallSpinFadeLoaderIndicator</item>
+    </style>
+
+    <style name="MultipleStatusView"/>
+    <style name="MultipleStatusView.Content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textColor">#a9b7b7</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

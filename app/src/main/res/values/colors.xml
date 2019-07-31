@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="color_gray">#9a9a9a</color>
+
+    <color name="color_gray_translucent">#5000</color>
+
+    <!-- title 半透明背景颜色 -->
+    <color name="color_title_bg">#CCFFFFFF</color>
+    <!-- 默认背景色 -->
+    <color name="backgroundColor">#EEEEEE</color>
+
+    <!-- white -->
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+
+    <color name="color_blue">#87CEEB</color>
+
+    <!-- item 标题颜色 -->
+    <color name="color_item_title">#000000</color>
+
+    <color name="color_lighter_gray">#ddd</color>
+    <color name="color_darker_gray">#aaa</color>
+
+    <color name="color_division_line">@color/color_lighter_gray</color>
+
+    <color name="color_translucent">#00000000</color>
+
+    <color name="color_aquamarine">#7FFFD4</color>
+
+    <color name="color_light_black">#5000</color>
+
+
+    <color name="colorTransparent">#00000000</color>
+    <color name="color_red">#ff0000</color>
+    <color name="color_33">#333333</color>
+    <color name="color_66">#666666</color>
+    <color name="color_99">#999999</color>
+    <color name="color_ee">#EEEEEE</color>
+    <color name="color_e5">#E5E5E5</color>
+    <color name="color_f5">#F5F5F5</color>
+    <color name="color_a5">#A5A5A5</color>
+    <color name="color_fd">#FDFDFD</color>
+    <color name="color_dd">#DDDDDD</color>
+    <color name="color_00B3F1">#00B3F1</color>
+    <color name="color_005DFF">#005DFF</color>
+    <color name="color_A5AAB2">#A5AAB2</color>
+    <color name="color_F6F7FC">#F6F7FC</color>
+    <color name="color_FF6C54">#FF6C54</color>
+    <color name="color_FF6B53">#FF6B53</color>
+    <color name="color_28CC57">#28CC57</color>
+    <color name="color_28CD58">#28CD58</color>
+    <color name="color_FFA20E">#FFA20E</color>
+    <color name="color_FFA310">#FFA310</color>
+    <color name="color_DA9512">#DA9512</color>
+    <color name="color_FF6553">#FF6553</color>
+    <color name="color_FFA859">#FFA859</color>
+    <color name="color_FF3636">#FF3636</color>
+    <color name="color_E1E2E6">#E1E2E6</color>
+</resources>

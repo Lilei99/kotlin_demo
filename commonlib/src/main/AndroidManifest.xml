@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.sixiangtianxia.commonlib">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+            android:theme="@style/AppTheme">
+    </application>
+    <!-- 全面屏设置 -->
+    <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1"/>
+</manifest>

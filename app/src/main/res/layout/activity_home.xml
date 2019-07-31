@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <FrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/tab_layout"
+            android:background="#f5f5f5"/>
+
+
+    <!--<com.github.mmin18.widget.RealtimeBlurView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@color/color_title_bg"-->
+    <!--/>-->
+
+    <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_translucent"
+            app:tl_divider_color="@color/color_black"
+            app:tl_iconHeight="23dp"
+            app:tl_iconWidth="23dp"
+            app:tl_indicator_color="@color/colorPrimary"
+            app:tl_indicator_height="0dp"
+            app:tl_textSelectColor="@color/color_black"
+            app:tl_textUnselectColor="@color/color_gray"
+            app:tl_textsize="13sp"
+            app:tl_underline_color="#DDDDDD"/>
+
+    <TextView
+            android:id="@+id/aaa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asdasdada"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+
+
+</RelativeLayout>
