@@ -2,10 +2,7 @@ package com.sixiangtianxia.login.presenter
 
 import com.sixiangtianxia.commonlib.model.AddressItemModel
 import com.sixiangtianxia.commonlib.model.PublicBean
-import com.sixiangtianxia.commonlib.model.UserInforBean
-import com.sixiangtianxia.commonlib.network.RetrofitNet
 import com.sixiangtianxia.commonlib.network.RetrofitNet2
-import com.sixiangtianxia.commonlib.network.RetrofitNetNoChiffrement
 import com.sixiangtianxia.commonlib.network.exception.ExceptionHandle
 import com.sixiangtianxia.commonlib.utils.LogUtil
 import com.sixiangtianxia.commonlib.utils.ToastUtils

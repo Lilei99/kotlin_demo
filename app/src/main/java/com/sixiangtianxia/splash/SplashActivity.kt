@@ -7,6 +7,8 @@ import com.sixiangtianxia.R
 import com.sixiangtianxia.commonlib.base.BaseActivity
 import com.sixiangtianxia.home.HomeActivity
 import kotlinx.android.synthetic.main.activity_splash.*
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class SplashActivity : BaseActivity() {
 
@@ -17,7 +19,7 @@ class SplashActivity : BaseActivity() {
 
     override fun initView() {
 
-        toHome.setOnClickListener (this)
+        toHome.setOnClickListener(this)
     }
 
     override fun start() {
@@ -30,5 +32,9 @@ class SplashActivity : BaseActivity() {
                 finish()
             }
         }
+    }
+
+    fun aaa() {
+
     }
 }

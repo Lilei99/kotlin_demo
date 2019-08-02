@@ -16,7 +16,7 @@
         android:paddingEnd="16dp"
         android:paddingStart="16dp"
         android:paddingTop="8dp"
-        tools:text="洋葱视频"
+        tools:text=""
         android:textSize="15dp" />
 
 </FrameLayout>

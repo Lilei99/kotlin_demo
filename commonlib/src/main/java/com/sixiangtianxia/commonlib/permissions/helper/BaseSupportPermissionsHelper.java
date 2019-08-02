@@ -31,13 +31,13 @@ public abstract class BaseSupportPermissionsHelper<T> extends PermissionHelper<T
         FragmentManager fm = getSupportFragmentManager();
 
         // Check if fragment is already showing
-        Fragment fragment = fm.findFragmentByTag(RationaleDialogFragmentCompat.TAG);
+        Fragment fragment = fm.findFragmentByTag(RationaleDialogFragmentCompat.Companion.getTAG());
         if (fragment instanceof RationaleDialogFragmentCompat) {
             return;
         }
 
-        RationaleDialogFragmentCompat
+        RationaleDialogFragmentCompat.Companion
                 .newInstance(rationale, positiveButton, negativeButton, theme, requestCode, perms)
-                .showAllowingStateLoss(fm, RationaleDialogFragmentCompat.TAG);
+                .showAllowingStateLoss(fm, RationaleDialogFragmentCompat.Companion.getTAG());
     }
 }

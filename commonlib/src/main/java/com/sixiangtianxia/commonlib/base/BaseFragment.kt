@@ -20,6 +20,7 @@ import com.sixiangtianxia.commonlib.MyApplication
 import com.sixiangtianxia.commonlib.permissions.AppSettingsDialog
 import com.sixiangtianxia.commonlib.permissions.EasyPermissions
 import com.sixiangtianxia.commonlib.utils.DialogFactory
+import com.sixiangtianxia.commonlib.utils.MyUtils
 import com.sixiangtianxia.commonlib.view.MultipleStatusView
 import org.greenrobot.eventbus.EventBus
 
@@ -135,7 +136,7 @@ abstract class BaseFragment : Fragment(), EasyPermissions.PermissionCallbacks, V
 
     fun showLoading() {
         if (mLoadingDialog == null) {
-            mLoadingDialog = DialogFactory.createLoadingDialog(activity)
+            mLoadingDialog = DialogFactory.createLoadingDialog(MyUtils.app)
         }
         mLoadingDialog!!.show()
     }

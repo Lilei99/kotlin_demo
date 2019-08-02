@@ -53,6 +53,9 @@ class HomeActivity : BaseActivity() {
         initTab()
         tab_layout.currentTab = mIndex
         switchFragment(mIndex)
+
+        var list = ArrayList<String>()
+        list.forEach(::println)
     }
 
     override fun layoutId(): Int {
@@ -61,6 +64,10 @@ class HomeActivity : BaseActivity() {
 
     override fun initData() {
 
+    }
+
+    fun get(): String {
+        return ""
     }
 
     override fun initView() {

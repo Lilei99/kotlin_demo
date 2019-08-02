@@ -111,7 +111,7 @@ class RetrofitNet {
                 .method(oldRequest.method(), oldRequest.body())
                 .url(authorizedUrlBuilder.build())
                 .addHeader("token", "c71b58e3471e61a02873afacb7dbe782")
-                .addHeader("ip", InternetUtils.getIPAddress())
+                .addHeader("ip", InternetUtils.ipAddress)
                 .addHeader("appType", "0")
                 .build()
             chain.proceed(newRequest)

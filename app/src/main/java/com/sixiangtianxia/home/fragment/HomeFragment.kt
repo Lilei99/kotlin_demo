@@ -6,10 +6,14 @@ import android.widget.RelativeLayout
 import com.sixiangtianxia.R
 import com.sixiangtianxia.commonlib.base.BaseFragment
 import com.sixiangtianxia.commonlib.utils.ScreenUtils
+import com.sixiangtianxia.commonlib.utils.ToastUtils
 import com.sixiangtianxia.home.HomeActivity
 import com.sixiangtianxia.login.contract.LoginContract
 import com.sixiangtianxia.login.presenter.LoginPresenter
 import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.cancelAndJoin
+import kotlinx.coroutines.launch
 
 class HomeFragment : BaseFragment(), LoginContract.View {
 
@@ -30,6 +34,7 @@ class HomeFragment : BaseFragment(), LoginContract.View {
     override fun getLayoutId(): Int {
         return R.layout.fragment_home;
     }
+
 
     override fun initView() {
         val activity = activity as HomeActivity
@@ -55,10 +60,14 @@ class HomeFragment : BaseFragment(), LoginContract.View {
         when (v!!.id) {
             R.id.aaa -> {
 //                showLoading()
-                presenter!!.login()
+//                presenter!!.login()
+//                Log.i("aaaaa","android".lastchar().toString())
+                ToastUtils.show("啊啊啊")
             }
         }
     }
+
+    fun String.lastchar(): Char = this.get(this.length - 1)
 
     override fun useEventBus(): Boolean {
         return false
@@ -72,6 +81,14 @@ class HomeFragment : BaseFragment(), LoginContract.View {
     }
 
     override fun jumpToLoginPage() {
+    }
+
+    suspend fun awdasd() {
+
+        var job = GlobalScope.launch {
+            println("world")
+        }
+        job.cancelAndJoin()
     }
 
 }

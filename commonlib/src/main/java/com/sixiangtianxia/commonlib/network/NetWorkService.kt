@@ -1,11 +1,9 @@
 package com.sixiangtianxia.commonlib.network
 
 import com.sixiangtianxia.commonlib.model.AddressItemModel
-import com.sixiangtianxia.commonlib.model.BaseModelReq
 import com.sixiangtianxia.commonlib.model.PublicBean
 import io.reactivex.Observable
 import retrofit2.http.*
-import java.util.HashMap
 
 interface NetWorkService {
 

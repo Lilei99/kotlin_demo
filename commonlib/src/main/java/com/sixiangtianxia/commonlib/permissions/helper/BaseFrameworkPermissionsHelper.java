@@ -31,14 +31,14 @@ public abstract class BaseFrameworkPermissionsHelper<T> extends PermissionHelper
         FragmentManager fm = getFragmentManager();
 
         // Check if fragment is already showing
-        Fragment fragment = fm.findFragmentByTag(RationaleDialogFragment.TAG);
+        Fragment fragment = fm.findFragmentByTag(RationaleDialogFragment.Companion.getTAG());
         if (fragment instanceof RationaleDialogFragment) {
             Log.d(TAG, "Found existing fragment, not showing rationale.");
             return;
         }
 
-        RationaleDialogFragment
+        RationaleDialogFragment.Companion
                 .newInstance(positiveButton, negativeButton, rationale, theme, requestCode, perms)
-                .showAllowingStateLoss(fm, RationaleDialogFragment.TAG);
+                .showAllowingStateLoss(fm, RationaleDialogFragment.Companion.getTAG());
     }
 }

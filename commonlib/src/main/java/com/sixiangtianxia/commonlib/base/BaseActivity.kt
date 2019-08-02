@@ -25,10 +25,8 @@ import com.sixiangtianxia.commonlib.permissions.EasyPermissions
 import com.sixiangtianxia.commonlib.utils.DialogFactory
 import com.sixiangtianxia.commonlib.utils.TimeUtils
 import com.sixiangtianxia.commonlib.utils.ToastUtils
-import com.sixiangtianxia.commonlib.utils.showToast
 import com.sixiangtianxia.commonlib.view.MultipleStatusView
 import org.greenrobot.eventbus.EventBus
-import java.util.*
 
 abstract class BaseActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks, View.OnClickListener {
     /**
@@ -47,7 +45,7 @@ abstract class BaseActivity : AppCompatActivity(), EasyPermissions.PermissionCal
                 View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
         }
         activity = this
-        ActivityManager.getInstance().addActivity(activity)
+        ActivityManager.instance!!.addActivity(this)
         if (useEventBus()) {
             EventBus.getDefault().register(activity) // 初始化EventBUs.
         }
@@ -137,7 +135,7 @@ abstract class BaseActivity : AppCompatActivity(), EasyPermissions.PermissionCal
     override fun onDestroy() {
         super.onDestroy()
         MyApplication.getRefWatcher(this)?.watch(activity)
-        ActivityManager.getInstance().removeActivity(activity)
+        ActivityManager.instance!!.removeActivity(this)
         if (useEventBus() && EventBus.getDefault().isRegistered(activity)) {
             EventBus.getDefault().unregister(activity)
         }
@@ -159,12 +157,12 @@ abstract class BaseActivity : AppCompatActivity(), EasyPermissions.PermissionCal
 
     // 退出App
     private fun exitApp() {
-        if (TimeUtils.getNowTimeMills() - mExitAppTime > 2000) {
+        if (TimeUtils.nowTimeMills - mExitAppTime > 2000) {
             ToastUtils.show("再按一次退出程序")
-            mExitAppTime = TimeUtils.getNowTimeMills()
+            mExitAppTime = TimeUtils.nowTimeMills
         } else {
             mExitAppTime = 0
-            ActivityManager.getInstance().removeAllActivity()
+            ActivityManager.instance!!.removeAllActivity()
             System.exit(0)
         }
     }
