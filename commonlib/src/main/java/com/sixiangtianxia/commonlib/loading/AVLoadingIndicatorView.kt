@@ -104,7 +104,7 @@ class AVLoadingIndicatorView : View {
         mMinHeight = a.getDimensionPixelSize(R.styleable.AVLoadingIndicatorView_minHeight, mMinHeight)
         mMaxHeight = a.getDimensionPixelSize(R.styleable.AVLoadingIndicatorView_maxHeight, mMaxHeight)
         val indicatorName = a.getString(R.styleable.AVLoadingIndicatorView_indicatorName)
-        mIndicatorColor = a.getColor(R.styleable.AVLoadingIndicatorView_indicatorColor, Color.WHITE)
+        mIndicatorColor = a.getColor(R.styleable.AVLoadingIndicatorView_indicatorColor, Color.RED)
         setIndicator(indicatorName)
         if (indicator == null) {
             indicator = DEFAULT_INDICATOR

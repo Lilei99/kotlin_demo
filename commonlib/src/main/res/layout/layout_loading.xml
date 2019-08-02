@@ -19,6 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/xdp_8"
             android:layout_marginLeft="@dimen/xdp_8"
+            android:text=""
             android:layout_marginRight="@dimen/xdp_8"
             android:textColor="@color/white"
             android:textSize="@dimen/xdp_13"/>

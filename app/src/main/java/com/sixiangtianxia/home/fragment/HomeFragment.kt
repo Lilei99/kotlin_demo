@@ -59,10 +59,10 @@ class HomeFragment : BaseFragment(), LoginContract.View {
     override fun onClick(v: View?) {
         when (v!!.id) {
             R.id.aaa -> {
-//                showLoading()
+                showLoading()
 //                presenter!!.login()
 //                Log.i("aaaaa","android".lastchar().toString())
-                ToastUtils.show("啊啊啊")
+                ToastUtils.show("啦啦啦")
             }
         }
     }

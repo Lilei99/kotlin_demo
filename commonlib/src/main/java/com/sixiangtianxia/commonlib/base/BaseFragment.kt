@@ -136,7 +136,7 @@ abstract class BaseFragment : Fragment(), EasyPermissions.PermissionCallbacks, V
 
     fun showLoading() {
         if (mLoadingDialog == null) {
-            mLoadingDialog = DialogFactory.createLoadingDialog(MyUtils.app)
+            mLoadingDialog = DialogFactory.createLoadingDialog(activity!!)
         }
         mLoadingDialog!!.show()
     }
