@@ -1,4 +1,4 @@
-package com.sixiangtianxia.commonlib.interfaces
+package com.sixiangtianxia.commonlib.listener
 
 interface DialogShowHiddenListener {
     /**
